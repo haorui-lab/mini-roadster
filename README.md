@@ -77,7 +77,7 @@ Checked 2026-10-19. The dev server was up and answered HTTP 200.
 
 Current URL:
 
-**http://mini-roadster.grok.me/**
+**https://mini-roadster.grok.me/**
 
 Open that URL. The in-app live preview is the same build. Language starts from `navigator.languages`. The process on this machine still listens on `0.0.0.0:8080`; the public address above is what you actually open.
 
@@ -174,7 +174,7 @@ Mini Roadster 起初是一个开放城市的小驾驶玩具，后来做成夜间
 
 ### 当前访问地址
 
-**http://mini-roadster.grok.me/**
+**https://mini-roadster.grok.me/**
 
 在浏览器里打开这个地址即可。应用里的实时预览也是同一套页面。语言默认跟 `navigator.languages`。本机进程仍监听 `0.0.0.0:8080`，上面这个地址才是实际访问入口。
 
