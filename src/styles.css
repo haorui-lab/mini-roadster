@@ -1,0 +1,107 @@
+@import "tailwindcss";
+
+@theme {
+  --color-bg: #070b16;
+  --color-surface: #141b2e;
+  --color-fg: #f6f1e7;
+  --color-muted: #9aa3b8;
+  --color-primary: #ff3355;
+  --color-accent: #3ee0ff;
+  --color-line: #2a3550;
+  --font-display: "Fredoka", "Noto Sans SC", "PingFang SC", "Microsoft YaHei", "WenQuanYi Zen Hei", sans-serif;
+  --font-sans: "Noto Sans SC", "Fredoka", "PingFang SC", "Microsoft YaHei", "WenQuanYi Zen Hei", sans-serif;
+  --radius: 1.1rem;
+}
+
+@layer base {
+  button:not(:disabled),
+  [role="button"]:not(:disabled) {
+    cursor: pointer;
+  }
+
+  html,
+  body {
+    height: 100%;
+    background: var(--color-bg);
+    color: var(--color-fg);
+    overscroll-behavior: none;
+  }
+}
+
+.rush {
+  background: radial-gradient(
+    ellipse at center,
+    transparent 42%,
+    color-mix(in oklab, var(--color-primary) 42%, transparent) 100%
+  );
+  opacity: var(--rush, 0);
+}
+
+.touch-layer {
+  display: none;
+}
+
+@media (pointer: coarse), (max-width: 800px) {
+  .touch-layer {
+    display: flex;
+  }
+}
+
+.stick-base {
+  width: 8.5rem;
+  height: 8.5rem;
+  border-radius: 999px;
+  border: 1px solid var(--color-line);
+  background: color-mix(in oklab, var(--color-surface) 82%, transparent);
+  touch-action: none;
+}
+
+.stick-nub {
+  width: 3.5rem;
+  height: 3.5rem;
+  border-radius: 999px;
+  background: var(--color-fg);
+}
+
+.hold {
+  min-width: 4.5rem;
+  min-height: 4.5rem;
+  border-radius: 999px;
+  border: 1px solid var(--color-line);
+  background: color-mix(in oklab, var(--color-surface) 88%, transparent);
+  color: var(--color-fg);
+  font-family: var(--font-display);
+  touch-action: none;
+}
+
+.hold-fly {
+  background: var(--color-primary);
+  color: var(--color-fg);
+  border-color: transparent;
+}
+
+.hold-roll {
+  border-color: color-mix(in oklab, var(--color-accent) 75%, var(--color-line));
+  color: var(--color-accent);
+}
+
+.pop {
+  animation: rise 900ms ease-out;
+}
+
+@keyframes rise {
+  from {
+    transform: translateY(6px);
+    opacity: 0;
+  }
+  to {
+    transform: none;
+    opacity: 1;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .pop {
+    animation: none;
+  }
+}

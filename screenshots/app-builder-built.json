@@ -1,0 +1,38 @@
+{
+  "url": "http://127.0.0.1:8081/",
+  "viewports": {
+    "desktop": {
+      "width": 1280,
+      "height": 800,
+      "status": 200,
+      "title": "Mini Roadster",
+      "hasCanvas": false,
+      "bodyTextLen": 665,
+      "bodyTextHash": "85e7188e950a35f149ed3fd476512d055f319834a967d0d3185a66882153e13f",
+      "bodyTextPrefix": "Mini night run Mini Roadster Open city · cold-gas hops · barrel ",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/app-builder-built.png"
+    },
+    "mobile": {
+      "width": 390,
+      "height": 844,
+      "status": 200,
+      "title": "Mini Roadster",
+      "hasCanvas": false,
+      "bodyTextLen": 665,
+      "bodyTextHash": "85e7188e950a35f149ed3fd476512d055f319834a967d0d3185a66882153e13f",
+      "bodyTextPrefix": "Mini night run Mini Roadster Open city · cold-gas hops · barrel ",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/app-builder-built-mobile.png"
+    }
+  },
+  "brandWarnings": [],
+  "authWarnings": [],
+  "verdictFile": "/workspace/screenshots/app-builder-built.json",
+  "divergesFromBaseline": false,
+  "baselineReasons": []
+}
